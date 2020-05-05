@@ -43,7 +43,6 @@ formulario = new FormGroup({
       produto.descricao ='Editado ' + new Date();
       await this.firestore.collection('produtos').doc(produto.id).update(produto);
       // this.atualizarLista();
-      
     }
 
     async excluir(produto: Produto){
